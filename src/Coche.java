@@ -17,19 +17,19 @@ public class Coche {
     //metodos
     public void arrancar() {
         this.encendido = true;
-        System.out.println("El coche" + this.marca + " ha arrancado ");
+        System.out.println("✅ El coche " + this.marca + " ha arrancado ");
         System.out.println();
     }
 
     public void apagar() {
         this.encendido = false;
-        System.out.println("El coche " + this.marca + " se ha apagado ");
+        System.out.println("🛑 El coche " + this.marca + " se ha apagado ");
         System.out.println();
     }
 
     public void describir() {
         String estado = this.encendido ? "encendido" : "apagado";
-        System.out.println("Este es un coche " + getMarca() + " de color " + getColor() + " y se encuentra " + estado);
+        System.out.println("🚗 Este es un coche " + getMarca() + " de color " + getColor() + " y se encuentra " + estado);
         System.out.println();
     }
 
@@ -53,7 +53,7 @@ public class Coche {
 
     public void pintar(String nuevoColor) {
         this.color = nuevoColor;
-        System.out.println("El coche" + this.marca + " ha sido pintado de color " + this.color);
+        System.out.println("🎨 Coche " + this.marca + " ha sido pintado de color " + this.color);
         System.out.println();
     }
 }
