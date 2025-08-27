@@ -1,17 +1,19 @@
 
 public class Main {
     public static void main(String[] args) {
+        //Creacion de objetos de tipo coche
         Coche coche1 = new Coche("Lamborghini " , "Urus" , "Naranja");
         Coche coche2 = new Coche("Ferrari " , "250 GTO" , "Amarillo");
         Coche coche3 = new Coche("Ford " , "Mustang" , "Rojo");
 
+        // Mensaje inicial del estado
         System.out.println("-".repeat(40));
         System.out.println("📊 ESTADO INICIAL DE LOS COCHES");
         System.out.println("-".repeat(40));
         coche1.describir();
         coche2.describir();
         coche3.describir();
-
+        
         System.out.println("-".repeat(40));
         System.out.println("🚦 PINTANDO LOS COCHES");
         System.out.println("-".repeat(40));
